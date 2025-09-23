@@ -1,0 +1,38 @@
+{
+  "name": "spoon-tracker-app",
+  "version": "1.0.0",
+  "description": "Application de gestion d'énergie quotidienne basée sur la théorie des cuillères",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src --port=3000",
+    "test": "npm run test:html && npm run test:js",
+    "test:html": "html-validate src/index.html",
+    "test:js": "eslint src/scripts/*.js",
+    "build": "echo 'No build step required for static files'",
+    "serve": "npx http-server src -p 8080",
+    "validate": "npm run test:html && npm run test:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dev.azure.com/marielambert0226/MyProjet/_git/SpoonTrackerApp"
+  },
+  "keywords": [
+    "spoon-theory",
+    "energy-management",
+    "health",
+    "productivity",
+    "azure",
+    "spa"
+  ],
+  "author": "Votre Nom",
+  "license": "MIT",
+  "devDependencies": {
+    "html-validate": "^8.7.4",
+    "eslint": "^8.55.0",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
